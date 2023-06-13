@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>SimpleForm</title> <link rel="stylesheet" href="main.css">
+</head>
+<body class="wufoo">
+<form method="get" action="https://www.google.com/" class="taokhung">
+    <div class="backgorund"><h2>SỞ THÍCH CỦA BẠN</h2></div>
+<table>
+    <tr>
+        <label>
+            <td class="tdmain">Họ và tên:</td>
+            <td><input type="text" name="yourname" placeholder="Your Name"/></td>
+        </label>
+    </tr>
+    <tr>
+        <label>
+            <td class="tdmain">Email:</td>
+            <td>
+                <input type="text" name="email" placeholder="Email"/>
+            </td>
+        </label>
+    </tr>
+    <tr>
+        <label>
+            <td class="tdmain">Sở thích:</td>
+        </label>
+    </tr>
+</table>
+    <table class="hobby">
+        <tr>
+            <td><input type="checkbox" name="hobby"/> Thể thao </td>
+            <td><input type="checkbox" name="hobby"/> Âm nhạc </td>
+            <td><input type="checkbox" name="hobby"/> Đọc sách </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="hobby"/> Lướt web </td>
+            <td><input type="checkbox" name="hobby"/> Chơi game </td>
+            <td><input type="checkbox" name="hobby"/> Điện ảnh </td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" name="hobby"/> Du lịch </td>
+        </tr>
+    </table>
+    <tr>
+        <td><input type="submit" name="SubmitForm" value="Gửi thông tin"/></td>
+        <td><input type="reset" name="ResetForm" value="Nhập lại"/></td>
+    </tr>
+</table>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<form method="get" action="https://www.bing.com/" class="taokhung">
+    <div><h2 class="DKHV">ĐĂNG KÝ HỌC VIÊN</h2></div>
+    <table>
+        <tr>
+            <label>
+                <td class="tdmain">Họ và tên:</td>
+                <td><input type="text" name="yourname" placeholder="Your Name"/></td>
+            </label>
+        </tr>
+        <tr>
+            <label>
+                <td class="tdmain">Ngày sinh:</td>
+                <td><input type="text" name="birth" placeholder="Date Of Birth"/></td>
+            </label>
+        </tr>
+        <tr>
+            <label>
+                <td class="tdmain">Giới tính:</td>
+                <td><input type="radio" name="gender"/>Nam
+                <input type="radio" name="gender"/>Nữ</td>
+            </label>
+        </tr>
+        <tr>
+            <label>
+                <td class="tdmain">Địa chỉ:</td>
+                <td><textarea></textarea></td>
+            </label>
+        </tr>
+        <tr>
+            <label>
+                <td class="tdmain">Lớp:</td>
+                <td>
+                    <select name="class" >
+                        <option selected>--Chọn lớp--</option>
+                        <option>A0523I1</option>
+                        <option>A0523I2</option>
+                        <option>A0523I3</option>
+                        <option>A0523I4</option>
+                        <option>A0523I5</option>
+                    </select>
+                </td>
+            </label>
+        </tr>
+        <tr>
+            <label>
+                <td class="tdmain">Email:</td>
+                <td><input type="text" name="email" placeholder="Email"/></td>
+            </label>
+        </tr>
+        <tr>
+            <label>
+                <td class="tdmain">Điện thoại:</td>
+                <td><input type="number" name="phone" placeholder="Phone Number"/></td>
+            </label>
+        </tr>
+    <tr>
+        <td><input type="submit" name="submitform" value="Đăng ký"/></td>
+        <td><input type="reset" name="ResetForm" value="Nhập lại"/></td>
+    </tr>
+    </table>
+</form>
+</body>
+</html>
