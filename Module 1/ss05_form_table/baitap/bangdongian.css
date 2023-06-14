@@ -1,0 +1,32 @@
+.table1 {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 20%;}
+.td1 {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;}
+.th1{
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+    background-color: yellow;}
+.table2 {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 35%;}
+
+.td2 {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;}
+
+.tablenoborder {
+    font-family: arial, sans-serif;
+    width: 35%;}
+.colortr{
+    font-family: Arial, sans-serif;
+    color: blue;
+}
+
+
