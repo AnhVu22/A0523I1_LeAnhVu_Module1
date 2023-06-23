@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+</head>
+<body>
+<h1>
+    Caculator
+</h1>
+    <input id="numberA" placeholder="Nhập số A">
+    <input id="numberB" placeholder="Nhập số B">
+<br>
+<br>
+    <button onclick="add()">Addition(+)</button>
+    <button onclick="sub()">Subtraction(-)</button>
+    <button onclick="multi()">Multiplication(x)</button>
+    <button onclick="div()">Division(/)</button>
+    <p id="result"></p>
+
+<script>
+    function add() {
+        a = document.getElementById("numberA").value;
+        b = document.getElementById("numberB").value;
+        sum = parseInt(a) + parseInt(b);
+        document.getElementById('result').innerText= "Kết quả: " + sum;
+    }
+    function sub() {
+        a = document.getElementById("numberA").value;
+        b = document.getElementById("numberB").value;
+        sum = parseInt(a) - parseInt(b);
+        document.getElementById('result').innerText = "Kết quả: " + sum;
+    }
+    function multi() {
+        a = document.getElementById("numberA").value;
+        b = document.getElementById("numberB").value;
+        sum = parseInt(a) * parseInt(b);
+        document.getElementById('result').innerText = "Kết quả: " + sum;
+    }
+    function div() {
+        a = document.getElementById("numberA").value;
+        b = document.getElementById("numberB").value;
+        sum = parseInt(a) / parseInt(b);
+        document.getElementById('result').innerText = "Kết quả: " + sum;
+    }
+</script>
+</body>
+</html>
