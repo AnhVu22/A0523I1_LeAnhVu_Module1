@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chu vi hình tròn</title>
+</head>
+<body>
+    <h1>Tính chu vi hình tròn</h1>
+    <table>
+        <tr>
+             <td>
+                 <label>Nhập bán kính hình tròn (cm)
+                 <input type="number" id="ban_kinh"/></label>
+             </td>
+        </tr> 
+        <tr>
+            <td>
+                <button onclick="tinhchuvi()">Tính chu vi hình tròn</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="chuvi"></td>
+       </tr>
+
+       <!-- JAVA SCRIPT -->
+<script>
+        function tinhchuvi() {
+            let r = parseFloat(document.getElementById("ban_kinh").value);
+            let chuvi = 2* Math.PI * r;
+            document.getElementById("chuvi").innerText = "Chu vi hình tròn: " + chuvi.toFixed(2) + " m"; 
+        }
+</script>
+</body>
+</html>

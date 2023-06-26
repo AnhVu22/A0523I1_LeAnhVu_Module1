@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TÍNH ĐIỂM TRUNG BÌNH VÀ TỔNG</title>
+</head>
+<body>
+    <h1>Nhập điểm của sinh viên</h1>
+
+ <table>   
+    <tr>
+        <td>
+            <label>Vật lý
+            <input type="number" id="ly"/></label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Hóa học
+            <input type="number" id="hoa"/></label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <label>Sinh học
+            <input type="number" id="sinh"/></label>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="tinhdiem()" id="average">
+            <label>Tính điểm trung bình</label>
+            </button>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="tinhdiem()" id="sum">
+            <label>Tổng điểm</label>
+            </button>
+        </td>
+    </tr>
+</table>
+    <!-- JAVA SCRIPT -->
+<script>
+    function tinhdiem(){
+        let ly= parseFloat(document.getElementById("ly").value);
+        let hoa= parseFloat(document.getElementById("hoa").value);
+        let sinh= parseFloat(document.getElementById("sinh").value);
+        let average = (ly+hoa+sinh)/3;
+        let sum = ly + hoa + sinh;
+        document.getElementById("average").innerHTML =average.toFixed(2);
+        document.getElementById("sum").innerHTML =sum;
+    }
+</script>
+</body>
+</html>

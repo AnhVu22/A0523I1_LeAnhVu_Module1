@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diện tích hình tròn</title>
+</head>
+<body>
+    <h1>Tính diện tích hình tròn</h1>
+    <table>
+        <tr>
+             <td>
+                 <label>Nhập bán kính hình tròn (cm)
+                 <input type="number" id="ban_kinh"/></label>
+             </td>
+        </tr> 
+        <tr>
+            <td>
+                <button onclick="tinhdientich()">Tính diện tích hình tròn</button>
+            </td>
+        </tr>
+        <tr>
+            <td id="dientich"></td>
+       </tr>
+
+       <!-- JAVA SCRIPT -->
+<script>
+        function tinhdientich() {
+            let r = parseFloat(document.getElementById("ban_kinh").value);
+            let dientich = Math.PI * r * r;
+            document.getElementById("dientich").innerText = "Diện tích hình tròn: " + dientich.toFixed(2) + " m2"; 
+        }
+</script>
+
+</body>
+</html>
