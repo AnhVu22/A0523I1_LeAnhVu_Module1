@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập cấu trúc điều kiện 01</title>
+</head>
+<body>
+    <h1>Kiểm tra tuổi đủ điều kiện vào lớp 10</h1>
+    <table>
+        <tr>
+            <td>
+                <input type="number" id="age" placeholder="Nhập số tuổi"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="kiemtra()" style="color: red; background-color:aqua;">Check</button>
+                <p id="result"></p>
+            </td>
+        </tr>
+    </table>
+<script>
+    function kiemtra() {
+        let a = +document.getElementById("age").value;
+        if (a >= 16) {
+           document.getElementById("result").innerText = "Đủ tuổi vào lớp 10";
+        } else {
+            document.getElementById("result").innerText= "Không đủ tuổi vào lớp 10";
+        }   
+    }
+</script>
+
+</body>
+</html>
