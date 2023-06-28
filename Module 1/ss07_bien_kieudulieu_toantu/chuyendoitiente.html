@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng chuyển đổi tiền tệ</title>
+</head>
+<body>
+    <h1>Chuyển đổi tiền tệ</h1>
+
+    <table>
+        <tr>
+        <td>
+            <label>Amount
+                <input type="number" id="soluong"/>
+            </label>
+            <label>From Currency
+                <select id="fromcurrency">
+                    <option value="VND">VietNam</option>
+                    <option value="USD">USD</option>
+                </select>
+            </label>
+            <label>To Currency
+                <select id="tocurrency">
+                    <option value="USD">USD</option>
+                    <option value="VND">VietNam</option>
+                </select>
+            </label>
+            <button onclick="convert()" style="color: white; background-color: blueviolet;">Convert</button>
+        </td>
+        </tr>
+        <tr>
+            <td id="result">
+                <!-- Kết quả hiển thị -->
+            </td>
+        </tr>
+    </table>
+
+    <!-- JAVA SCRIPT -->
+<script>
+    function convert() {
+        let soluong = document.getElementById("soluong").value
+        let fromcurrency = document.getElementById("fromcurrency").value
+        let tocurrency = document.getElementById("tocurrency").value
+        let result = soluong * 23000
+        document.getElementById("result").innerHTML = "Result: " + result
+    }
+</script>
+
+</body>
+</html>
