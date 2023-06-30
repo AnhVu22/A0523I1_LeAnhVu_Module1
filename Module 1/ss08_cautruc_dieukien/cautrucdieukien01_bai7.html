@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập cấu trúc điều kiện 01</title>
+  </head>
+  <body>
+    <h1>Tính cước điện thoại cho một hộ gia đình</h1>
+    <table>
+      <tr>
+        <td>
+          <input type="text" id="phutGoi" placeholder="Nhập số phút đã gọi" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button
+            onclick="tinhTien()"
+            style="color: red; background-color: aqua"
+          >
+            Tính tiền
+          </button>
+          <!-- <p id="result"></p> -->
+        </td>
+      </tr>
+    </table>
+    <script>
+      function tinhTien() {
+        let phutGoi = +document.getElementById("phutGoi").value;
+        let tongTien = 0;
+        if (phutGoi < 15) {
+          tongTien = phutGoi * 500;
+        } else if (phutGoi < 20) {
+          tongTien = 5 * 500 + (phutGoi - 5) * 700;
+        } else {
+          tongTien = 5 * 500 + 5 * 700 + (phutGoi - 10) * 1500;
+        }
+        alert(tongTien + " VND");
+      }
+    </script>
+  </body>
+</html>
