@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bài tập cấu trúc điều kiện 01</title>
-</head>
-<body>
-    <h1>Xếp hạng học lực của học sinh dựa trên các bài kiểm tra, điểm thi giữa kỳ và cuối kỳ</h1>
+  </head>
+  <body>
+    <h1>
+      Xếp hạng học lực của học sinh dựa trên các bài kiểm tra, điểm thi giữa kỳ
+      và cuối kỳ
+    </h1>
     <table>
-        <tr>
-            <td>
-                <input type="number" id="diemkiemtra" placeholder="Nhập điểm bài kiểm tra"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="number" id="diemgiuaky" placeholder="Điểm thi giữa kỳ"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="number" id="diemcuoiky" placeholder="Điểm thi cuối kỳ"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button onclick="kiemtra()" style="color: red; background-color:aqua;">Check</button>
-                <p id="result"></p>
-            </td>
-        </tr>
+      <tr>
+        <td>
+          <input
+            type="number"
+            id="diemkiemtra"
+            placeholder="Nhập điểm bài kiểm tra"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="number" id="diemgiuaky" placeholder="Điểm thi giữa kỳ" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <input type="number" id="diemcuoiky" placeholder="Điểm thi cuối kỳ" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button
+            onclick="kiemtra()"
+            style="color: red; background-color: aqua"
+          >
+            Check
+          </button>
+          <p id="result"></p>
+        </td>
+      </tr>
     </table>
-<script>
-    function kiemtra() {
+    <script>
+      function kiemtra() {
         let a = parseFloat(document.getElementById("diemkiemtra").value);
         let b = parseFloat(document.getElementById("diemgiuaky").value);
         let c = parseFloat(document.getElementById("diemcuoiky").value);
-        let average= (a+b+c)/3;
+        let average = (a + b + c) / 3;
         if (average >= 8) {
-           document.getElementById("result").innerText = "Học lực giỏi";
-        } else { 
-            if (8 > average && average >= 6) {
-           document.getElementById("result").innerText = "Học lực khá";  
+          document.getElementById("result").innerText = "Học lực giỏi";
+        } else {
+          if (8 > average && average >= 6) {
+            document.getElementById("result").innerText = "Học lực khá";
+          } else {
+            if (6 > average && average >= 5) {
+              document.getElementById("result").innerText =
+                "Học lực trung bình";
             } else {
-                if (6 > average && average >= 5) {
-                document.getElementById("result").innerText= "Học lực trung bình";    
-                } else {
-                document.getElementById("result").innerText= "Học lực yếu";
-                }
+              document.getElementById("result").innerText = "Học lực yếu";
             }
-        }   
-    }
-</script>
-
-</body>
+          }
+        }
+      }
+    </script>
+  </body>
 </html>

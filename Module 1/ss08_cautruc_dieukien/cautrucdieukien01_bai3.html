@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bài tập cấu trúc điều kiện 01</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Kiểm tra số nguyên bất kỳ lớn hay nhỏ hơn 0</h1>
     <table>
-        <tr>
-            <td>
-                <input type="number" id="soN" placeholder="Nhập số nguyên bất kỳ"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button onclick="kiemtra()" style="color: red; background-color:aqua;">Check</button>
-                <p id="result"></p>
-            </td>
-        </tr>
+      <tr>
+        <td>
+          <input type="number" id="soN" placeholder="Nhập số nguyên bất kỳ" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button
+            onclick="kiemtra()"
+            style="color: red; background-color: aqua"
+          >
+            Check
+          </button>
+          <p id="result"></p>
+        </td>
+      </tr>
     </table>
-<script>
-    function kiemtra() {
+    <script>
+      function kiemtra() {
         let a = +document.getElementById("soN").value;
         if (a > 0) {
-           document.getElementById("result").innerText = "Số này lớn hơn 0";
+          document.getElementById("result").innerText = "Số này lớn hơn 0";
         } else {
-            document.getElementById("result").innerText= "Số này nhỏ hơn 0";
-        }   
-    }
-</script>
-
-</body>
+          document.getElementById("result").innerText = "Số này nhỏ hơn 0";
+        }
+      }
+    </script>
+  </body>
 </html>

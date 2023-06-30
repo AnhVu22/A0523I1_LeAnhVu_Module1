@@ -1,53 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tính chỉ số cân nặng của cơ thể</title>
-</head>
-<body>
+  </head>
+  <body>
     <h1>Tính chỉ số cân nặng của cơ thể</h1>
-  <table>
-    <tr>
+    <table>
+      <tr>
         <td>
-        <label>Nhập chỉ số cân nặng (Kg)
-            <input type="number" id="weight"/>
-        </label>
+          <label
+            >Nhập chỉ số cân nặng (Kg)
+            <input type="number" id="weight" />
+          </label>
         </td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>
-        <label>Nhập chỉ số chiều cao (m)
-            <input type="number" id="height"/>
-        </label>
+          <label
+            >Nhập chỉ số chiều cao (m)
+            <input type="number" id="height" />
+          </label>
         </td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td>
-            <button onclick="tinhchiso()" style="color: white; background-color: red;">Caculate
-            </button>
+          <button
+            onclick="tinhchiso()"
+            style="color: white; background-color: red"
+          >
+            Caculate
+          </button>
         </td>
-    </tr>
-    <tr>
+      </tr>
+      <tr>
         <td id="BMI"></td>
-    </tr>
-  </table>
+      </tr>
+    </table>
 
-
-  <script>
-    function tinhchiso() {
-        let weight = parseInt(document.getElementById("weight").value)
-        let height = parseInt(document.getElementById("height").value)
-        let BMI = weight / ( height ^ 2 )
-        if (BMI < 18)
-    document.write("Underweight");
-else if (BMI < 25.0)
-    document.write("Normal");
-else if (BMI < 30.0)
-    document.write("Overweight");
-else
-    document.write("Obese");
-    }
-  </script>
-</body>
+    <script>
+      function tinhchiso() {
+        let weight = parseInt(document.getElementById("weight").value);
+        let height = parseInt(document.getElementById("height").value);
+        let BMI = weight / (height ^ 2);
+        if (BMI < 18) document.write("Underweight");
+        else if (BMI < 25.0) document.write("Normal");
+        else if (BMI < 30.0) document.write("Overweight");
+        else document.write("Obese");
+      }
+    </script>
+  </body>
 </html>

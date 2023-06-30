@@ -6,45 +6,45 @@
     <title>Bài tập cấu trúc điều kiện 01</title>
 </head>
 <body>
-    <h1>Tìm giá trị lớn nhất của 3 số nguyên</h1>
-    <table>
-        <tr>
-            <td>
-                <input type="number" id="soA" placeholder="Nhập só A"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="number" id="soB" placeholder="Nhập só B"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <input type="number" id="soC" placeholder="Nhập só C"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <button onclick="kiemtra()" style="color: red; background-color:aqua;">Check</button>
-                <p id="result"></p>
-            </td>
-        </tr>
-    </table>
+<h1>Tìm giá trị lớn nhất của 3 số nguyên</h1>
+<table>
+    <tr>
+        <td>
+            <input type="number" id="soA" placeholder="Nhập só A"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="soB" placeholder="Nhập só B"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <input type="number" id="soC" placeholder="Nhập só C"/>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <button onclick="kiemtra()" style="color: red; background-color:aqua;">Check</button>
+            <p id="result"></p>
+        </td>
+    </tr>
+</table>
 <script>
     function kiemtra() {
         let a = +document.getElementById("soA").value;
         let b = +document.getElementById("soB").value;
         let c = +document.getElementById("soC").value;
 
-        if (a>b & a>c) {
-           document.getElementById("result").innerText = "A là số lớn nhất";
-        } else { 
-            if (b>c) {
-           document.getElementById("result").innerText = "B là số lớn nhất";  
+        if (a > b & a > c) {
+            document.getElementById("result").innerText = "A là số lớn nhất";
+        } else {
+            if (b > c) {
+                document.getElementById("result").innerText = "B là số lớn nhất";
             } else {
-                document.getElementById("result").innerText= "C là số lớn nhất";
+                document.getElementById("result").innerText = "C là số lớn nhất";
             }
-        }   
+        }
     }
 </script>
 
