@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài tập cấu trúc điều kiện 2</title>
+  </head>
+  <body>
+    <h1>Kiểm tra ba số thực có phải là cạnh của một tam giác</h1>
+    <table>
+      <tr>
+        <p style="color: blue">Nhập 3 số thực bất kì</p>
+      </tr>
+      <tr>
+        <p>a = <input type="text" id="soA" /></p>
+      </tr>
+      <tr>
+        <p>b = <input type="text" id="soB" /></p>
+      </tr>
+      <tr>
+        <p>c = <input type="text" id="soC" /></p>
+      </tr>
+      <tr>
+        <td><button onclick="ketQua()" style="color: white; background-color: #285f8f; padding: 5px; margin-left: 70px">Kiểm tra</button></td>
+      </tr>
+      <tr>
+        <td id="result"></td>
+      </tr>
+    </table>
+
+    <script>
+      function ketQua() {
+        let a = +document.getElementById("soA").value;
+        let b = +document.getElementById("soB").value;
+        let c = +document.getElementById("soC").value;
+        if ((a, b, c > 0 && a + b > c && b + c > a && a + c > b)) {
+          document.getElementById("result").innerText = "Các số nhập vào là cạnh của một tam giác";
+        } else {
+          document.getElementById("result").innerText = "Các số nhập vào không phải là cạnh của một tam giác";
+        }
+      }
+    </script>
+  </body>
+</html>
