@@ -7,30 +7,22 @@
   </head>
   <body>
     <h1>Bài 1: In dãy Fibonacci</h1>
-    <button onclick="play()">Play</button>
-
+    <input type="text" id="so" placeholder="Nhập số" /> <br />
+    <button onclick="inDayso()">Print</button>
     <script>
-      function play() {
-        let min = +prompt("Nhập số Min");
-        let max = +prompt("Nhập số Max");
-        let random = Math.round(Math.random() * (max - min) + min);
-        console.log(random);
-        let soLan = 1;
-        do {
-          let number = +prompt("Nhập số bạn đoán");
-          if (number === random) {
-            alert("Bạn đã đoán đúng");
-            break;
-          } else if (number < random) {
-            alert("Số bạn nhập nhỏ hơn số được chọn");
-          } else {
-            alert("Số bạn nhập lớn hơn số được chọn");
-          }
-          if (soLan === 3) {
-            alert("Bạn đã thua cuộc");
-          }
-          soLan++;
-        } while (soLan <= 3);
+      function inDayso() {
+        let number = parseInt(document.getElementById("so").value);
+        let a = 0,
+          b = 1,
+          next;
+        document.write(a + "<br>");
+        document.write(b + "<br>");
+        for (i = 1; i <= number; i++) {
+          next = a + b;
+          a = b;
+          b = next;
+          document.write(next + "<br>");
+        }
       }
     </script>
   </body>
